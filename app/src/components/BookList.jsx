@@ -39,58 +39,50 @@ const handleClearFavorites = () => {
   return (
     <div className="book-list-container">
     <div className='grid'>
-    <div className="grid-two-thirds">
-      <h2>Books</h2>
-      <div className="book-list"> 
-        {books.map((book, index) => (
-          <div className="book-list-item" key={book.id || `book-${index}`}>
-            <p>{Array.isArray(book.author) ? book.author.join(', ') : book.author}</p>
-            <h3>{book.title}</h3>
-            <p>{book.pages} pages</p>
-            <img src={book.imageLink} alt={`${book.title} + ' ' + ${book.author}`} className='book-img' />
-            <p>{book.year}, {book.language}</p>
-            <button onClick={() => handleAddToFavorites(book)}>Add to Favorites</button>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <div className="grid-third">
-      <h2>Favorites</h2>
-      <div className="favorites-list">
-      {favorites.length > 0 ? (
-        <>
-          {favorites.map((favBook, index) => (
-            <div className="favorites-item" key={favBook.id || `fav-${index}`}>
-                <p>{Array.isArray(favBook.author) ? favBook.author.join(', ') : favBook.author}</p>
-                <h3>{favBook.title}</h3>
-                <p>{favBook.pages} pages</p>
-                <img src={favBook.imageLink} alt={`${favBook.title} + ' ' + ${favBook.author}`} className='book-img' />
-                <p>{favBook.year}, {favBook.language}</p>
-
-                <button className='btn-rmv' onClick={() => handleRemoveFromFavorites(favBook)}>Remove</button>
+      <div className="grid-two-thirds">
+        <h2>Books</h2>
+        <div className="book-list"> 
+          {books.map((book, index) => (
+            <div className="book-list-item" key={book.id || `book-${index}`}>
+                <p>{Array.isArray(book.author) ? book.author.join(', ') : book.author}</p>
+              <h3>{book.title}</h3>
+              <p>{book.pages} pages</p>
+              <img src={book.imageLink} alt={`${book.title} + ' ' + ${book.author}`} className='book-img' />
+              <p>{book.year}, {book.language}</p>
+              <button onClick={() => handleAddToFavorites(book)}>Add to Favorites</button>
             </div>
           ))}
-          <button onClick={handleClearFavorites} className="btn-clear">Clear Favorites</button>
-        </>
-      ) : (
-        <>
-          <p>No favorites added yet.</p>
-        </>
-      )}
+        </div>
+      </div>
+
+      <div className="grid-third">
+        <h2>Favorites</h2>
+        <div className="favorites-list">
+        {favorites.length > 0 ? (
+          <>
+            {favorites.map((favBook, index) => (
+              <div className="favorites-item" key={favBook.id || `fav-${index}`}>
+                  <p>{Array.isArray(favBook.author) ? favBook.author.join(', ') : favBook.author}</p>
+                  <h3>{favBook.title}</h3>
+                  <p>{favBook.pages} pages</p>
+                  <img src={favBook.imageLink} alt={`${favBook.title} + ' ' + ${favBook.author}`} className='book-img' />
+                  <p>{favBook.year}, {favBook.language}</p>
+
+                  <button className='btn-rmv' onClick={() => handleRemoveFromFavorites(favBook)}>Remove</button>
+              </div>
+            ))}
+            <button onClick={handleClearFavorites} className="btn-clear">Clear Favorites</button>
+          </>
+        ) : (
+          <>
+            <p>No favorites added yet.</p>
+          </>
+        )}
         
 
         </div>
-        </div>  
-
-
-
-
-
-        
+      </div>     
     </div>
-  
-  
     </div>
   );
 }

@@ -34,16 +34,25 @@
 
 2. What would you add to your solution if you had more time?
    Answer:
-    1. I wasn't able to make the Favorites.jsx a separate component from the BooksList.jsx because I still struggle with passing the functionality of adding an from one component to another. I'd like to go over this again
-    2. Use an API to fetch the data with search functionality (Google books API or Open Library API(s))
-    3. I'd love to add a profile and login feature with auth & auth
-    4. I used local storage to save the lists, or several lists could max it out, so I would like to use a database -- preferably hosted.
-    5. Clean up the styling more and add icons 
-    6. Make it fully responsive
+    i. I wasn't able to make the Favorites.jsx a separate component from the BooksList.jsx because I still struggle with passing the functionality of adding an from one component to another. I'd like to go over this again
+    ii. Use an API to fetch the data with search functionality (Google books API or Open Library API(s))
+    iii. I'd love to add a profile and login feature with auth & auth
+    iv. I used local storage to save the lists, or several lists could max it out, so I would like to use a database -- preferably hosted.
+    v. Clean up the styling more and add icons 
+    vi. Make it fully responsive and accessible
 
 3. Share a code snippet that you are proud of and explain what it does
+```
 
+
+
+
+
+```
 4. How would you track down a performance issue in production? Have you ever had to do this?
+   The best way to track down issues is through user testing and QA testing. 
+   Throughout the build phase numerous bugs are likely to arise, but often the most insidious bugs require the actual USE of the product, not just what we do during the build. That is why testing is so important!
+   User testing is great because it allows UX issues to be tracked and changed, and as a bonus users will inevitably find bugs. These bugs may even be something the QA team misses. 
 
 ---
 

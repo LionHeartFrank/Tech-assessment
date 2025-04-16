@@ -30,7 +30,7 @@ export default function App() {
         </div> */}
       </div>
       <footer className="footer">
-        <p>Made with ❤️ by Frank Nave for CodeOp tech School</p>
+        <p>Made with ❤️ by Frank Nav for CodeOp tech School</p>
     </footer>
   </div>
   )
