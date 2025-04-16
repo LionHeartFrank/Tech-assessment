@@ -30,8 +30,16 @@
 # Questions
 
 1. How long did you spend on the coding?
+   Answer: I spent about 2 hrs solving the problems and about an hour styling
 
 2. What would you add to your solution if you had more time?
+   Answer:
+    1. I wasn't able to make the Favorites.jsx a separate component from the BooksList.jsx because I still struggle with passing the functionality of adding an from one component to another. I'd like to go over this again
+    2. Use an API to fetch the data with search functionality (Google books API or Open Library API(s))
+    3. I'd love to add a profile and login feature with auth & auth
+    4. I used local storage to save the lists, or several lists could max it out, so I would like to use a database -- preferably hosted.
+    5. Clean up the styling more and add icons 
+    6. Make it fully responsive
 
 3. Share a code snippet that you are proud of and explain what it does
 
